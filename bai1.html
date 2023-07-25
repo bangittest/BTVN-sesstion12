@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- bai 1 -->
+    <!-- <script>
+        for (let i = 1; i < 100; i++) {
+            document.write(`<br>${i}`)
+
+        }
+        alert(`da hoan thanh`)
+    </script> -->
+
+    <!-- bai 3 -->
+    <!-- <script>
+        let a = 0;
+        let b = 1;
+        let x;
+
+        for (let i = 0; i < 20; i++) {
+            document.write(`<br>${a}`);
+            x = a + b;
+            a = b;
+            b = x;
+        }
+    </script> -->
+
+
+    <!-- <script>
+        const colors = ['red', 'blue', 'green', 'yellow', 'orange', 'purple', 'pink', 'brown', 'gray', 'black'];
+        for (let i = 0; i < 10; i++) {
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            console.log(randomColor);
+        }
+    </script> -->
+
+    <!-- <script>
+
+        //  Viết chương trình hiển thị bình phương của số nguyên từ 2 🡪 N nhưng hiển thị các kết quả chia hết cho 2..N 
+        //  nhập từ người dùng.Nếu N < 2 hoặc N > 100, thông báo người dùng nhập lại.
+        let N = prompt("Nhập số N:");
+        if (N < 2 || N > 100) {
+            alert("nhập số N trong khoảng từ 2 đến 100");
+        } else {
+            for (let i = 2; i <= N; i++) {
+                if (i % 2 === 0) {
+                    document.write(<br>${i * i});
+                }
+            }
+        }
+    </script> -->
+    <!-- 
+    <script>
+
+        // Viết chương trình hiển thị bình phương của số chẵn từ 2
+        //  🡪 N.N nhập từ người dùng.Nếu N < 2 hoặc N > 100, thông báo người dùng nhập lại.
+        let N = prompt("Nhập số N:");
+        if (N < 2 || N > 100) {
+            alert("Vui lòng nhập số N trong khoảng từ 2 đến 100");
+        } else {
+            for (let i = 2; i <= N; i += 2) {
+
+                document.write(`<br>${i * i}`);
+            }
+        }
+    </script> -->
+
+    <!-- <script>
+        let color = 0;
+        for (i = 0; i < 10; i++) {
+            color = 100 + Math.floor(Math.random() * 899);//cú pháp random màu
+            console.log("%c day la noi dug", `color: #${color}`) //bắt buộc phải có %c ở trước để nhận được mã random color
+        }
+    </script> -->
+    <!-- nhâp vào các số nguyên đến khi nhập số 0 thì dừng lại hiển thị tổng của các số vừa nhập -->
+    <!-- <script>
+        let n = 1;
+        let sum = 0;
+        while (n != 0) {
+            //nhap 1 so nguyen
+            n = +prompt(`nhap 1 so nguyen`);
+            if (n % 2 == 0) {
+                sum += n;
+            }
+
+        }
+        alert(`tong cac so ` + sum)
+    </script> -->
+
+
+    <!-- <script>
+        //kiem tra 1 so 
+        let n = +prompt(`nhap n=`)
+        let a = 0;
+        let b = 1;
+        let c = 0;
+        for (i = 0; i < n; i++) {
+            if (i == 0) {
+                console.log(a);
+            } else if (i == 1) {
+                console.log(b)
+            } else {
+                c = a + b
+                a = b
+                b = c
+                console.log(c)
+            }
+        }
+
+    </script> -->
+    <!-- <script>
+        //     Viết một đoạn mã cho phép người dùng nhập vào một số nguyên dương n.Tiến hành kiểm tra xem đó có phải là
+        //      một số hợp lệ hay không.Nếu đó là số hợp lệ, tiến hành in ra màn hình console các số từ 0 — n theo dạng chẵn lẻ.
+
+        //             Input: n = 5
+        // Expected output:
+
+        //         1 - lẻ
+        //         2 - chẵn
+        //         3 - lẻ
+        //         4 - chẵn
+        //         5 - lẻ
+        //     let n;
+        do {
+            n = +prompt(`nhap so vao day:`)
+        } while (n <= 0)
+        for (let i = 1; i <= n; i++) {
+            if (i % 2 == 0) {
+                console.log(`${i}:chan`)
+            } else {
+                console.log(`${i}:le`)
+            }
+        }
+    </script> -->
+    <!-- <script>
+        let n;
+        let sochan = ""
+        let sole = ""
+        do {
+            n = +prompt(`nhap so n`)
+        } while (n <= 1);
+        for (let i = 1; i <= n; i++) {
+            if (i % 2 == 0) {
+                sochan += `${i}
+`
+            } else {
+                sole += `${i}
+`
+            }
+        }
+
+        console.log(sochan)
+        console.log(sole)
+    </script> -->
+    <script>
+        // 11.Viết một đoạn mã mô phỏng máy ATM. 
+        // Cho người dùng nhập vào số tiền cần rút. 
+        // Sau đó in ra tổng số tờ tiền mà người dùng nhận được với từng loại mệnh giá. 
+        // Biết máy ATM chỉ rút được 3 loại mệnh giá là 500.000, 200.000, 100.000, 50.000. 
+        // Biết số tiền tối thiểu rút một lần là 50.000
+
+        let tien = 0; // khai báo biến lưu trữ số tiền nhập vào
+        let a = b = c = d = 0; // khai báo lần lượt các biến đếm số lượng các tờ tiền 500, 200, 100, 50; let a = 0; let b = 0....
+
+
+        // vòng lặp nhập tiền
+        do {
+            tien = prompt("Nhap so tien ban muon rut")
+        } while (tien <= 0 || tien % 50000 !== 0); // không được nhập tiền âm, tiền = 0 và không chia hết cho 50.000
+
+        // vòng lặp khi còn tiền thì sẽ tính toán trừ tiền
+        while (tien > 0) {
+            //nếu tiền lớn hơn 500.000 thì sẽ rút được 1 tờ 500.000 và khi nhỏ hơn thì tương tự cho các tờ tiền khác
+            if (tien >= 500000) {
+                tien -= 500000
+                a++
+            } else if (tien >= 200000) {
+                tien -= 200000
+                b++
+            } else if (tien >= 100000) {
+                tien -= 100000
+                c++
+            } else {
+                tien -= 50000
+                d++
+            }
+        }
+
+        // kiểm tra xem có tờ nào và có bao nhiêu tờ thì in ra
+        if (a > 0) {
+            console.log(`500000 - ${a}`)
+        }
+        if (b > 0) {
+            console.log(`200000 - ${b}`)
+        }
+        if (c > 0) {
+            console.log(`100000 - ${c}`)
+        }
+        if (d > 0) {
+            console.log(`50000 - ${d}`)
+        }
+    </script>
+
+</body>
+
+</html>

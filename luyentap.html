@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <script>
+        for (let i = 1; i < 100; i++) {
+            document.write(`<br>${i}`)
+        }
+        alert(`da hoan thanh`)
+
+    </script> -->
+
+    <!-- <script>
+        let n;
+        do {
+            n = +prompt(`nhiet do hien tai`)
+            if (n <= 20) {
+                console.log(`tang nhiet do`)
+                break;
+            } else {
+                console.log(`giam nhiet do`)
+                break;
+            }
+        } while (n >= 20 && n <= 100);
+    </script> -->
+
+
+    <!-- <script>
+        let a = 0;
+        let b = 1;
+        let x = 0;
+        let sum = 0
+        for (let i = 0; i < 20; i++) {
+            if (i == 0) {
+                console.log(a)
+
+            } else if (i == 1) {
+                console.log(b);
+            } else {
+                x = a + b
+                a = b
+                b = x
+                console.log(x)
+                //sum += x
+
+            } if (x % 5 === 0) {
+                console.log(x)
+                break;
+            }
+
+
+        } //console.log(sum)
+
+
+    </script> -->
+    <!-- <script>
+        for (let i = 1; i <= 100; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                console.log(`${i}FizzBuzz`)
+            } else if (i % 3 == 0) {
+                console.log(`${i}Fizz`)
+            } else if (i % 5 == 0) {
+                console.log(`${i}Buzz`)
+            } else {
+                console.log()
+            }
+        }
+    </script> -->
+
+    <!-- <script>
+        let cout = 0;
+        let sum = 0;
+        for (let i = 1; cout < 30; i++) {
+            if (i % 5 == 0) {
+                sum += i;
+                cout++
+            }
+        }
+        console.log(sum);
+    </script> -->
+
+
+
+    <!-- <script>
+        let cout = 0;
+        let sum = 0;
+        for (let i = 1; cout < 30; i++) {
+            if (i % 5 === 0) {
+                console.log(i)
+                sum = sum + i
+                cout++
+            }
+        }
+        console.log(sum)
+    </script> -->
+
+    <!-- <Script>
+        let N = +prompt(`nhap so giai thua`)
+        let giaithua = 1;
+        for (let i = 1; i <= N; i++) {
+            giaithua = giaithua * i
+        }
+        console.log(giaithua)
+    </Script> -->
+
+    <!-- <script>
+        let numbers = +prompt(`nhap 1 gia tri tu ban phim`)
+        count = 0;
+        let N = 2;
+        let check = true;
+        while (count < numbers) {
+            for (let i = 2; i <= (N / 2); i++) {
+                if (N % i == 0) {
+                    check = false;
+                    break;
+                }
+            }
+
+            if (check == true) {
+                console.log("==> ", N);
+                count++
+            }
+
+            N++;
+            check = true;
+        }
+    </script> -->
+    <!-- <script>
+        // let j = prompt(`nhap 1->9`)
+        let sum = 1
+        for (let i = 1; i <= 10; i++) {
+            for (let j = 1; j <= 10; j++) {
+                sum = i * j
+                console.log(`${sum}=${i}x${j}`);
+            }
+
+        }
+    </script> -->
+
+    <!-- <script>
+        let n = +prompt("nhap so n lon hon 1 va be hon 10:");
+        if (1 <= n <= 10) {
+            for (let i = 1; i <= 10; i++) {
+                console.log(n + " x " + i + " = " + n * i);
+            }
+
+        }
+    </script> -->
+
+    <!-- <script>
+        let n = +prompt(`nhap 1->9`)
+        let sum = 1;
+        if (n >= 1 && n <= 10) {
+            for (let i = 1; i <= 10; i++) {
+                sum = n * i
+                console.log(`${n}x${i}=${sum}`)
+            }
+        }
+
+    </script> -->
+
+
+    <!-- <script>
+        let n = +prompt(`nhap n:`)
+        for (let i = 1; i <= n; i++) {
+            if (i % 2 == 0) {
+                console.log(`${i}- chan`)
+            }
+        }
+        for (let i = 1; i <= n; i++) {
+            if (i % 2 != 0) {
+                console.log(`${i}- le`)
+            }
+        }
+    </script> -->
+
+
+    <!-- <script>
+        sum = 0;
+        count = 1;
+        for (let i = 1; count <= 30; i++) {
+            if (i % 5 == 0) {
+                sum = sum + i
+                console.log(i)
+                count++
+            }
+        }
+        console.log(sum)
+    </script> -->
+
+
+    <!-- <script>
+        //Bài 6: Tính tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên.
+        let count = 1;
+        let sum = 0;
+        for (let i = 1; count <= 30; i++) {
+            if (i % 7 == 0) {
+
+                console.log(i)
+                sum += i
+                count++
+            }
+        }
+        console.log(sum);
+    </script> -->
+
+
+
+</body>
+
+</html>

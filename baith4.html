@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- BÀI 4: Viết chương trình hiển thị các số từ 1 🡪 100. Nếu số đó chia hết cho 3 thì hiển thị là “Fizz”, nếu số đó chia
+    hết cho 5 thì hiển thị là “Buzz”. Nếu số đó chia hế cho 3 và 5 thì hiển thị “FizzBuzz”. -->
+
+    <!-- <script>
+        //điều kiện vòng lập
+        for (let i = 1; i <= 100; i++) {
+            //nếu chia hết cho 3 và 5 thì
+            if (i % 3 === 0 && i % 5 === 0) {
+                console.log(`${i} FizzBuzz`);
+                //nếu chia hết cho 3 thì
+            } else if (i % 3 === 0) {
+                console.log(`${i} Fizz`);
+                //nếu chia hết cho 5 thì
+            } else if (i % 5 === 0) {
+                console.log(`${i} Buzz`);
+            } else {
+                console.log(i);
+            }
+        }
+    </script> -->
+
+    <!-- <script>
+        BÀI 5: Viết chương trình kiểm tra số N có phải là số nguyên 
+        tố không? N nhập từ browser
+        let N = +prompt("Nhập số N:");
+
+        let check = true;
+
+        if (N < 2) {
+            check = false;
+        } else {
+            //điều kiện số nguyên tố
+            for (let i = 2; i <= (N / 2); i++) {
+                if (N % i === 0) {// điều kiện n chia i =0
+                    check = false;//check = false thì dừng
+                    break;
+                }
+            }
+        }
+
+        if (check) {
+            document.write(N + " là số nguyên tố");
+        } else {
+            document.write(N + " không phải là số nguyên tố");
+        }
+    </script> -->
+
+
+    <!-- <script>
+        let N=+prompt("Nhap so N:");
+        let check=true;
+        if(N=0){
+
+        }
+    </script> -->
+
+
+
+    <!-- <script>
+        // BÀI 6: Viết chương trình kiểm tra số N
+        // có phải là số hoàn hảo hay không? N nhập từ browser
+        let N = +prompt("Nhập số N:");
+
+        let sum = 0;
+        //điều kiện vongf lập
+        for (let i = 1; i < N; i++) {
+            //điều kiện n chia hết cho i sum=sum+i--->sum=N thì là số hoàn hảo
+    if (N % i === 0) {
+    sum += i;
+    }
+    }
+
+    if (sum === N) {
+    document.write(N + " là số hoàn hảo");
+    } else {
+    document.write(N + " không phải là số hoàn hảo");
+    }
+    </script>
+
+    -->
+
+    <!-- <script>
+        let j = "";
+        for (let i = 1; i <= 5; i++) {
+            j += "*"
+            console.log(j)
+        }
+    </script> -->
+
+
+    <script>
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= 5; j++) {
+                if (i <= j) {//i>=j || i+j=6 ||i+j<=6
+                    document.write("*")
+                } else {
+                    document.write(" ");
+                }
+            }
+            document.write();
+        }
+    </script>
+
+
+    <!-- 
+    <script>
+        // BÀI 7: In ra giai thừa của số nguyên dương N ? N nhập từ browser
+        // Lấy giá trị của N từ prompt
+        let N = parseInt(prompt("Nhập số nguyên dương N:"));
+
+        // Tính giai thừa của N
+        let giaiThua = 1;
+        for (let i = 1; i <= N; i++) {
+            giaiThua *= i;
+        }
+
+        // In ra giai thừa của N
+        document.write("Giai thừa của " + N + " là: " + giaiThua);
+
+
+    </script> -->
+
+</body>
+
+</html>
